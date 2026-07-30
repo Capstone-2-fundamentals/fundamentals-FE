@@ -4,10 +4,13 @@ function ExpenseList(){
             <h1>Expense List</h1>
 
             <ul>
-                <p>Groceries - $50</p>
+                <li>Groceries - $50</li>
                 <li>Transportation - $20</li>
                 <li>Netflix - $15</li>
+                 <button> +Add expense</button>
+                  <button> edit expense</button>
             </ul>
+           
         </div>
     );
 }

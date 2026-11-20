@@ -4,6 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import ExpenseList from './pages/ExpenseList'
+import { Route, Routes } from 'react-router'
+import CreateExpense from './pages/CreateExpense'
 
 function App() {
   
@@ -11,7 +13,11 @@ function App() {
 
   return (
     <div>
-      <ExpenseList/>
+      <Routes>
+        <Route path="/" element={<ExpenseList/>} />
+        <Route path="/create" element={<CreateExpense />} />
+      
+      </Routes>
 
     </div>
   
